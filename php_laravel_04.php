@@ -47,7 +47,11 @@ array_push($country, "Aunstralia", "Chaina");
 print_r($country);
 echo "\n";
 //array_merge
-//あまり良く理解出来ませんでした
+/*
+* $arrayが 1と2 二つ存在する場合、
+* array2(後の方) が優先させる
+* 故にターミナルで出力した時、red より green が出力される
+*/
 $array1 = array("color" => "red", 2, 4);
 $array2 = array("a", "b", "color" => "green", "shape" => "square", 4);
 $result = array_merge($array1, $array2);
